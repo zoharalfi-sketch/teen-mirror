@@ -151,7 +151,8 @@ function shareResult(name) {
         alert("Result copied to clipboard!");
     }
 }
-
+ 
 function restartQuiz() {
     location.reload();
+
 }
