@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Teen Mirror</title>
+  <title>Voices Beyond the Headlines</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,16 +11,30 @@
 <body>
 
 <div class="app-container" id="app">
-  <h1>Teen Mirror</h1>
 
-  <button onclick="setLanguage('en')">🇺🇸 English</button>
-  <button onclick="setLanguage('he')">🇮🇱 עברית</button>
-  <button onclick="setLanguage('fr')">🇫🇷 Français</button>
-  <button onclick="setLanguage('es')">🇪🇸 Español</button>
+  <div class="landing-screen">
+    <h1 class="main-title">Voices Beyond the Headlines</h1>
+
+    <p class="tagline" id="landingTagline">
+      Discover the human stories behind the news.
+    </p>
+
+    <div class="language-buttons">
+      <button onclick="setLandingLanguage('en')">🇺🇸 English</button>
+      <button onclick="setLandingLanguage('he')">🇮🇱 עברית</button>
+      <button onclick="setLandingLanguage('fr')">🇫🇷 Français</button>
+      <button onclick="setLandingLanguage('es')">🇪🇸 Español</button>
+    </div>
+
+    <button onclick="startApp()" id="enterBtn">
+      Enter the Experience
+    </button>
+  </div>
+
 </div>
 
 <script src="data.js"></script>
 <script src="script.js"></script>
 
 </body>
-</html></html>
+</html> 
